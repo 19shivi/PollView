@@ -25,6 +25,7 @@ Add it in your root build.gradle at the end of repositories:
  then use as a view in XML 
  
   <com.shivam.pollview.PollView
+  
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
@@ -32,7 +33,7 @@ Set question using
 pollView.setQuestion(String:Question) 
 
 set option using 
-pollView.setOptions(ArrayList/<String/>:option,ArrayList/<Int/>  voteCountForEachOption)
+pollView.setOptions(ArrayList String :option,ArrayList String :voteCountForEachOption)
   
 
 

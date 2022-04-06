@@ -1,6 +1,8 @@
 # PollView
 
+##Introduction
 
+Android custom view to show Polls for MCQ.
 
 To get a Git project into your build:
 

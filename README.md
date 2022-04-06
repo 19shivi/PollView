@@ -32,7 +32,7 @@ Set question using
 pollView.setQuestion(String:Question) 
 
 set option using 
-pollView.setOptions(ArrayList<String>:option,ArrayList<Int>  voteCountForEachOption)
+pollView.setOptions(ArrayList/<String/>:option,ArrayList/<Int/>  voteCountForEachOption)
   
 
 

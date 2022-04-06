@@ -13,11 +13,13 @@ class MainActivity : AppCompatActivity() {
         var temp=ArrayList<String>()
         temp.add("JAVA")
         temp.add("CPP")
-    //    temp.add("Python")
+       temp.add("Python")
+        temp.add("Python")
         var count=ArrayList<Int>()
         count.add(10)
         count.add(10)
-     //   count.add(17)
+       count.add(17)
+        count.add(170)
 
         mainBinding.pollView.setOptions(temp,count)
         mainBinding.set.setOnClickListener {

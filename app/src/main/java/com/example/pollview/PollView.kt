@@ -155,7 +155,6 @@ class PollView(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int 
         pollViewBinding.tvOption4.setOnClickListener {
             disableClick()
             percentage[3]++
-            setPercent()
             pollViewBinding.seekBar4.progressDrawable =
                 ContextCompat.getDrawable(context, R.drawable.progress_track_selected)
             setPercent()
@@ -199,7 +198,7 @@ class PollView(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int 
             }
             va.start()
             pollViewBinding.tvOption1.gravity = Gravity.CENTER_VERTICAL
-            pollViewBinding.tvOption1.setPadding(32, 0, 0, 0)
+            pollViewBinding.tvOption1.setPadding(64, 0, 0, 0)
         }
         if (percentage.size > 1) {
             pollViewBinding.seekBar2.visibility = VISIBLE
@@ -212,7 +211,7 @@ class PollView(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int 
             va.start()
             pollViewBinding.tvPercent2.text=("${percent[1]}%")
             pollViewBinding.tvOption2.gravity = Gravity.CENTER_VERTICAL
-            pollViewBinding.tvOption2.setPadding(32, 0, 0, 0)
+            pollViewBinding.tvOption2.setPadding(64, 0, 0, 0)
         }
         if (percentage.size > 2) {
             pollViewBinding.seekBar3.visibility = VISIBLE
@@ -225,7 +224,7 @@ class PollView(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int 
             va.start()
             pollViewBinding.tvPercent3.text=("${percent[2]}%")
             pollViewBinding.tvOption3.gravity = Gravity.CENTER_VERTICAL
-            pollViewBinding.tvOption3.setPadding(32, 0, 0, 0)
+            pollViewBinding.tvOption3.setPadding(64, 0, 0, 0)
 
         }
         if (percentage.size > 3) {
@@ -240,7 +239,8 @@ class PollView(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int 
             va.start()
             pollViewBinding.tvPercent4.text=("${percent[3]}%")
             pollViewBinding.tvOption4.gravity = Gravity.CENTER_VERTICAL
-            pollViewBinding.tvOption4.setPadding(32, 0, 0, 0)
+            pollViewBinding.tvOption4.setPadding(64, 0, 0, 0)
+
 
         }
     }

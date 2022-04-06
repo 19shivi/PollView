@@ -24,16 +24,17 @@ Add it in your root build.gradle at the end of repositories:
   To use it enable view binding in your project
  then use as a view in XML 
  
-  <com.shivam.pollview.PollView
-  
+         <com.shivam.pollview.PollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
 Set question using 
-pollView.setQuestion(String:Question) 
+      
+      pollView.setQuestion(String:Question) 
 
 set option using 
-pollView.setOptions(ArrayList String :option,ArrayList String :voteCountForEachOption)
+
+          pollView.setOptions(ArrayList String :option,ArrayList String :voteCountForEachOption)
   
 
 

@@ -40,4 +40,4 @@ set option using
   
 
 
-![](https://github.com/shivamvns19111999/PollView/blob/master/ezgif.com-gif-maker.gif)
+![](https://github.com/shivamvns19111999/PollView/blob/master/ezgif.com-gif-maker(1).gif)

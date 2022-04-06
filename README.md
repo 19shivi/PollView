@@ -38,4 +38,4 @@ set option using
   
 
 
-file:///home/this/Downloads/ezgif.com-gif-maker.gif![image](https://user-images.githubusercontent.com/54793097/161969782-b08dc16f-4466-4797-bae9-f8e69d53dae0.png)
+![](https://github.com/shivamvns19111999/PollView/blob/master/ezgif.com-gif-maker.gif)

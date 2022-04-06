@@ -29,10 +29,10 @@ Add it in your root build.gradle at the end of repositories:
         android:layout_height="wrap_content"/>
 
 Set question using 
-setQuestion function 
+pollView.setQuestion(String:Question) 
 
 set option using 
-pollView.setOptions(Array<String>:option,ArrayList<Int>  voteCountForEachOption)
+pollView.setOptions(ArrayList<String>:option,ArrayList<Int>  voteCountForEachOption)
   
 
 

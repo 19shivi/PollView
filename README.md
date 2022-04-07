@@ -37,7 +37,29 @@ Set question using
 set option using 
 
           pollView.setOptions(ArrayList String :option,ArrayList String :voteCountForEachOption)
+	  
+To apply styles to question textview
+           use pollview.questionTextView
+To apply styles to options
+            use pollview.optionViews.forEach {
+	      it.tvOption               //textview
+              it.tvPercent              //textview
+              it.seekBar                // seekbar
+	    }
+To change the progress color you have to provide two drawable 
+             setDefaultProgressDrawable(drawable: Drawable) 
+	     
+     setSelectedProgressDrawable(drawable: Drawable)
+      
+      Note:Drawable will be similar to https://github.com/shivamvns19111999/PollView/blob/master/PollViewLibrary/src/main/res/drawable /progress_track.xml
   
+
+To get the selected option 
+               pass the OnClickOptionListener to PollView using 
+                setOnOptionCLickListener(onOptionClickListener: OnOptionClickListener)
+
+To get the updated vote counts for options use 
+                                       pollview.getVoteCount():ArrayList<Int>
 
 
 ![](https://github.com/shivamvns19111999/PollView/blob/master/ezgif.com-gif-maker(1).gif)

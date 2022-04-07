@@ -43,7 +43,8 @@ To apply styles to question textview
            use pollview.questionTextView
 To apply styles to options
 
-            use pollview.optionViews.forEach {
+            use pollview.optionViews.forEach
+	    {
 	      it.tvOption               //textview
               it.tvPercent              //textview
               it.seekBar                // seekbar
@@ -52,7 +53,7 @@ To apply styles to options
 To change the progress color you have to provide two drawable 
 
              setDefaultProgressDrawable(drawable: Drawable)            
-     setSelectedProgressDrawable(drawable: Drawable)
+             setSelectedProgressDrawable(drawable: Drawable)
       
       Note:Drawable will be similar to
       https://github.com/shivamvns19111999/PollView/blob/master/PollViewLibrary/src/main/res/drawable /progress_track.xml
@@ -60,7 +61,7 @@ To change the progress color you have to provide two drawable
 
 To get the selected option 
 
-               pass the OnClickOptionListener to PollView using 
+                pass the OnClickOptionListener to PollView using 
                 setOnOptionCLickListener(onOptionClickListener: OnOptionClickListener)
 		
 

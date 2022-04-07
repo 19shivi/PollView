@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:paddingEnd="16dp"
+    android:paddingStart="16dp">
+
+
+    <SeekBar
+        android:id="@+id/seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:max="100"
+        android:maxHeight="10000dp"
+        android:paddingStart="0dp"
+        android:paddingEnd="0dp"
+        android:progress="25"
+        android:progressDrawable="@drawable/progress_track"
+        android:thumb="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_option"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:paddingStart="32dp"
+        android:paddingEnd="0dp"
+        android:text="JavaJavagoyfv ryu fyu1rfyucirync vlyhf ,WEFYC,R JVJava HCJGR UYCVHKVJHYJV FYF4C VYJR 3FVJLEXHFV EFJLH FV3C FV3 XLLYV4H3 XFXVUZSQKG..XFGFF24IU.QKEWJRE.SDBCLHQFKGER.J,CF.BLKUXRQUGF.K3FXG3IF1KHC JFVH3Rwjheg cou3fccy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_percent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:paddingEnd="16dp"
+        android:text="25%"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -27,7 +27,7 @@ class PollView(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int 
 
     constructor(context: Context) : this(context = context, attrs = null, defStyleAttr = 0)
 
-    private var mOptionClickListener: OnOptionClickListener? = null;
+    private var mOptionClickListener: OnOptionClickListener? = null
     private var voteCountList = arrayListOf<Int>()
     private var percentList = arrayListOf<Int>()
     var optionViews = arrayListOf<OptionViewBinding>()
@@ -63,7 +63,7 @@ class PollView(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int 
         // options = array
         voteCountList = initialCount
         optionViews.clear()
-        var position = 0;
+        var position = 0
         array.forEach {
             val optionViewBinding = OptionViewBinding.inflate(LayoutInflater.from(context))
             optionViewBinding.seekBar.progressDrawable =
@@ -71,7 +71,7 @@ class PollView(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int 
             optionViewBinding.seekBar.visibility = VISIBLE
             optionViewBinding.seekBar.progress = 0
             optionViewBinding.seekBar.setOnTouchListener { _, _ -> true }
-            optionViewBinding.tvOption.text = array[0]
+            optionViewBinding.tvOption.text = it
             optionViewBinding.tvOption.gravity = Gravity.CENTER
             optionViewBinding.tvOption.setPadding(24)
             optionViewBinding.tvPercent.visibility = GONE

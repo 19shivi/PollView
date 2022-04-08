@@ -42,6 +42,10 @@ class PollView(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int 
         this.mOptionClickListener = onOptionClickListener
     }
 
+    fun getVoteCount(): ArrayList<Int> {
+        return voteCountList
+    }
+
     fun setQuestion(question: String) {
         orientation = VERTICAL
         questionTextView = TextView(context)
@@ -60,7 +64,7 @@ class PollView(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int 
     }
 
     fun setOptions(array: ArrayList<String>, initialCount: ArrayList<Int>) {
-        // options = array
+
         voteCountList = initialCount
         optionViews.clear()
         var position = 0
@@ -91,6 +95,14 @@ class PollView(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int 
             position++
 
         }
+        var totalTextView = TextView(context)
+        var total = 0
+        voteCountList.forEach {
+            total += it
+        }
+        totalTextView.text = "Total votes: $total"
+        totalTextView.setPadding(64, 32, 0, 0)
+        addView(totalTextView)
     }
 
 

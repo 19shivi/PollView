@@ -18,6 +18,7 @@
         android:paddingStart="0dp"
         android:paddingEnd="0dp"
         android:progress="25"
+        android:background="@drawable/bg"
         android:progressDrawable="@drawable/progress_track"
         android:thumb="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="parent"

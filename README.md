@@ -56,7 +56,7 @@ To change the progress color you have to provide two drawable
              setSelectedProgressDrawable(drawable: Drawable)
       
       Note:Drawable will be similar to
-     [] https://github.com/shivamvns19111999/PollView/blob/master/PollViewLibrary/src/main/res/drawable /progress_track.xml
+![](https://github.com/shivamvns19111999/PollView/blob/master/PollViewLibrary/src/main/res/drawable /progress_track.xml)
   
 
 To get the selected option 

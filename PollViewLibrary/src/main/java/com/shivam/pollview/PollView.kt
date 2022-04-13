@@ -8,11 +8,14 @@ import android.graphics.drawable.Drawable
 import android.util.AttributeSet
 import android.view.Gravity
 import android.view.LayoutInflater
+import android.view.ViewGroup
 import android.view.animation.DecelerateInterpolator
 import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
 import androidx.core.view.setPadding
+import com.google.android.material.card.MaterialCardView
 import com.shivam.pollview.databinding.OptionViewBinding
 
 
@@ -90,6 +93,9 @@ class PollView(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int 
                 mOptionClickListener?.onOptionClick(pos)
 
             }
+            var optionParams=LayoutParams(LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.WRAP_CONTENT)
+            optionParams.setMargins(32,32,32,0)
+            optionViewBinding.cornerView.layoutParams=optionParams
             optionViews.add(optionViewBinding)
             addView(optionViewBinding.root)
             position++

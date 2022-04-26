@@ -1,14 +1,13 @@
 package com.example.pollview
 
-import android.app.PictureInPictureParams
-import android.content.pm.PackageManager
-import android.graphics.Color
-import android.os.Build
 import android.os.Bundle
+import android.provider.Settings
 import android.util.Log
+import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import com.example.pollview.databinding.ActivityMainBinding
 import com.shivam.pollview.OnOptionClickListener
+
 
 class MainActivity : AppCompatActivity() {
     private lateinit var mainBinding: ActivityMainBinding
@@ -16,15 +15,20 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         mainBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(mainBinding.root)
+        val imei = Settings.Secure.getString(getContentResolver(), Settings.Secure.ANDROID_ID);
+
         val temp = ArrayList<String>()
         temp.add("Java")
-
+        temp.add("php")
+        temp.add(imei)
         val count = ArrayList<Int>()
-        count.add(170)
-
-
-
-
+        count.add(1)
+        count.add(0)
+        count.add(0)
+        getWindow().setFlags(
+            WindowManager.LayoutParams.FLAG_SECURE,
+            WindowManager.LayoutParams.FLAG_SECURE
+        )
 
 
         mainBinding.set.setOnClickListener {

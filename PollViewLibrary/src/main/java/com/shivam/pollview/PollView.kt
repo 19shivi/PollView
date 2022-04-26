@@ -12,10 +12,8 @@ import android.view.ViewGroup
 import android.view.animation.DecelerateInterpolator
 import android.widget.LinearLayout
 import android.widget.TextView
-import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
 import androidx.core.view.setPadding
-import com.google.android.material.card.MaterialCardView
 import com.shivam.pollview.databinding.OptionViewBinding
 
 
@@ -66,12 +64,12 @@ class PollView(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int 
         selectedDrawable = drawable
     }
 
-    fun setOptions(array: ArrayList<String>, initialCount: ArrayList<Int>) {
+    fun setOptions(options: ArrayList<String>, initialCount: ArrayList<Int>) {
 
         voteCountList = initialCount
         optionViews.clear()
         var position = 0
-        array.forEach {
+        options.forEach {
             val optionViewBinding = OptionViewBinding.inflate(LayoutInflater.from(context))
             optionViewBinding.seekBar.progressDrawable =
                 defaultDrawable.constantState?.newDrawable()?.mutate()

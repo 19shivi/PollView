@@ -1,4 +1,4 @@
-package com.shivam.pollview
+package com.shivam.pollview.view
 
 import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
@@ -14,6 +14,8 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.core.view.setPadding
+import com.shivam.pollview.OnOptionClickListener
+import com.shivam.pollview.R
 import com.shivam.pollview.databinding.OptionViewBinding
 
 
